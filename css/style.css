@@ -5,3 +5,145 @@
     color: hsl(228, 45%, 44%); 
 }
 
+:root{
+    --pale-blue:hsl(243, 100%, 93%);
+    --grayish-blue:hsl(229, 7%, 55%);
+    --dark-blue:hsl(228, 56%, 26%);
+    --very-dark-blue:hsl(229, 57%, 11%);
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.875rem;
+    background-image: url("../images/bg-mobile.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+
+.container{
+    
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main{
+    width:85%;
+    display: grid;
+    justify-items: center;
+}
+
+.square{
+    background-color: var(--dark-blue);
+    border-radius:0.75em;
+}
+
+.rounded-corner{
+    margin-bottom: 1em;
+    padding:3em;
+    border-top-right-radius: 45%;
+    max-width: 23em;
+    width:100%;
+}
+
+.logo{
+    margin-bottom: 2em;
+}
+
+.icons{
+    display:flex;
+    gap:1em;
+}
+.icon{
+    background-color: var(--very-dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0.75em;
+    border-radius: 0.625em;
+}
+
+
+.storage-container{
+    display: grid;
+    width:100%;
+    max-width:23em;
+}
+.storage-section{
+    padding:2em 2.5em 4em 2.5em;
+}
+
+.storage-info{
+    text-align: center;
+    color:var(--pale-blue);
+    margin-bottom: 1.3em;
+}
+.used-storage{
+    font-weight: 700;
+}
+
+.bar{
+    height:1.4em;
+    background-color: var(--very-dark-blue);
+    border-radius: 0.625em;
+    margin-bottom: .7em;
+    padding:.2em;
+}
+.load-bar{
+    background: linear-gradient(45deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    height: 100%;
+    border-radius: 0.625em;
+    width: 70%;
+    padding:.13em;
+}
+.white-point{
+    width: .8em;
+    height: 100%;
+    background: white;
+    border-radius: 100%;
+    float: right;
+}
+
+.storage-range{
+    display: flex;
+    justify-content: space-between;
+}
+.gigabyte{
+    color:var(--pale-blue);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.storage-left{
+    padding:1em 1.5em;
+    background-color: white;
+    display: inline-block;
+    border-radius: .625em;
+    justify-self: center;
+    position: relative;
+    bottom: 2.8em;
+}
+.gigabytes-left{
+    text-transform: uppercase;
+    color:var(--grayish-blue);
+    font-weight: 700;
+    font-size:.8rem;
+    display: flex;
+    align-items: center;
+    gap: .6em;
+}
+.number{
+    font-size:2.5rem;
+    color:var(--very-dark-blue);
+}

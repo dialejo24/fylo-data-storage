@@ -6,42 +6,45 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet"> 
   <title>Frontend Mentor | Fylo data storage component</title>
 </head>
 <body>
   <div class="container">
     <main class="main">
       <div class="square rounded-corner">
-        <figure>
+        <figure class="logo">
           <img src="images/logo.svg" alt="logo">
         </figure>
         <div class="icons">
-          <figure>
+          <figure class="icon">
             <img src="images/icon-document.svg" alt="icon document">
           </figure>
-          <figure>
+          <figure class="icon">
             <img src="images/icon-folder.svg" alt="icon folder">
           </figure>
-          <figure>
+          <figure class="icon">
             <img src="images/icon-upload.svg" alt="icon upload">
           </figure>
         </div>
       </div>
-      <div class="square">
-        <p>You've used <span class="used-storage">815GB</span> of your storage</p>
-        <div class="bar">
-          <div class="load-bar">
-            <div class="white-point"></div>
+      <div class="storage-container"> 
+        <div class="square storage-section">
+          <p class="storage-info">You've used <span class="used-storage">815GB</span> of your storage</p>
+          <div class="bar">
+            <div class="load-bar">
+              <div class="white-point"></div>
+            </div>
+          </div>
+          <div class="storage-range">
+            <p class="gigabyte">0 gb</p>
+            <p class="gigabyte">1000 gb</p>
           </div>
         </div>
-        <div class="storage-range">
-          <p>0gb</p>
-          <p>1000gb</p>
+        <div class="storage-left">
+          <p class="gigabytes-left"><span class="number">185</span> gb left</p>
         </div>
-      </div>
-      <div class="storage-left">
-        <p><span class="number">185</span> gb left</p>
-      </div>
+      </div> 
     </main>
   </div>
   <foooter class="attribution" role="contentinfo">
