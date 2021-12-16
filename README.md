@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://github.com/dialejo24/fylo-data-storage)
+- Live Site URL: [live site](https://dialejo24.github.io/fylo-data-storage/)
 
 ## My process
 
